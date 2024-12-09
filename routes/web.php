@@ -12,6 +12,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Route::get('/dashboard', [DashboardController::class, 'index']);
 
-Route::get('/hello', function () {
-    return 'Hello world';
-});
+// Route::get('/hello', function () {
+//     return 'Hello world';
+// });
