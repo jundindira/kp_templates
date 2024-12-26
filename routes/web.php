@@ -16,9 +16,3 @@ Auth::routes();
 
 // Route Dashboard Setelah Login
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-
-// Route::get('/dashboard', [DashboardController::class, 'index']);
-
-// Route::get('/hello', function () {
-//     return 'Hello world';
-// });
