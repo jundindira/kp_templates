@@ -6,6 +6,7 @@
         <!-- Sidebar -->
         <div class="col-md-3">
             <div class="card border border-info-subtle">
+
                 <div class="card-header">{{ __('Menu') }}</div>
                 <div class="card-body p-0">
                     <ul class="nav flex-column">
@@ -31,6 +32,7 @@
                         </li>
                     </ul>
                 </div>
+                
             </div>
         </div>
 
