@@ -62,7 +62,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #ECECEC;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -639,6 +639,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  padding-left: 0;
 }
 
 @media (min-width: 576px) {
@@ -3649,6 +3650,9 @@ textarea.form-control-lg {
     transition: none;
   }
 }
+.nav-link:hover {
+    background-color: #FFFFFF;
+}
 .nav-link:hover, .nav-link:focus {
   color: var(--bs-nav-link-hover-color);
 }
@@ -3790,10 +3794,32 @@ textarea.form-control-lg {
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
+  /* position: relative;
+  left: 15px; /* Geser ke kiri sesuai kebutuhan */
+  /* transform: translateX(-15px); Opsional, jika ingin lebih presisi */
 }
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
 }
+
+.navbar .container .navbar-brand {
+  margin-left: 0; /* Ubah nilai ini untuk menyesuaikan posisi */
+  padding-left: 0; /* Jika perlu */
+  margin-right: 0; /* Ubah nilai ini untuk menyesuaikan posisi */
+  padding-right: 0; /* Jika perlu */
+}
+
+
+.navbar-search {
+  flex-grow: 1; /* Membuat search bar memanfaatkan ruang kosong */
+  /* max-width: 500px; /* Atur panjang maksimal search bar */
+}
+
+.navbar-search .form-control {
+  width: 100%; /* Memanfaatkan ruang kosong */
+  max-width: 600px; /* Sesuaikan panjang maksimal */
+}
+
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
@@ -8110,6 +8136,11 @@ textarea.form-control-lg {
   color: #6c757d !important;
 }
 
+.text-dark-50 {
+  --bs-text-opacity: 1;
+  color: #3F3F3F !important;
+}
+
 .text-black-50 {
   --bs-text-opacity: 1;
   color: rgba(0, 0, 0, 0.5) !important;
@@ -10958,8 +10989,9 @@ body {
 
 .sb-topnav {
   padding-left: 0;
-  height: 56px;
+  height: 60px;
   z-index: 1039;
+  background-color: #ECECEC;
 }
 .sb-topnav .navbar-brand {
   width: 225px;
@@ -10972,11 +11004,19 @@ body {
   color: #212529;
 }
 
+#sidebarToggle {
+    margin-left: 0px; /* Jarak ke kanan dari navbar-brand */
+    margin-top: 5px; /* Sesuaikan vertikal agar lebih sejajar */
+    padding: 0px 0px; /* Berikan padding agar terlihat rapi */
+    border-radius: 5px; /* Opsional, agar lebih menarik */
+}
+
 .sb-sidenav {
   display: flex;
   flex-direction: column;
   height: 100%;
   flex-wrap: nowrap;
+  background-color: #ECECEC;
 }
 .sb-sidenav .sb-sidenav-menu {
   flex-grow: 1;
