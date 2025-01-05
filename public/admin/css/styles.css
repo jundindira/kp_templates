@@ -3877,9 +3877,11 @@ textarea.form-control-lg {
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
   font-size: var(--bs-navbar-brand-font-size);
+  font-weight: 500;
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
+  /* align-items: center; */
   /* position: relative;
   left: 15px; /* Geser ke kiri sesuai kebutuhan */
   /* transform: translateX(-15px); Opsional, jika ingin lebih presisi */
@@ -11108,6 +11110,10 @@ body {
 .nav .nav-link .sb-nav-link-icon,
 .sb-sidenav-menu .nav-link .sb-nav-link-icon {
   margin-right: 0.5rem;
+}
+
+.sb-sidenav-menu {
+    padding-top: 30px;
 }
 
 .nav .nav-link-sidebar .sb-nav-link-icon,
