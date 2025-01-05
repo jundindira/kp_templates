@@ -4365,6 +4365,13 @@ textarea.form-control-lg {
   color: var(--bs-card-color);
 }
 
+.card-body-h1{
+    flex: 1 1 auto;
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    color: var(--bs-card-color);
+    font-size: 20px;
+  }
+
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
 }
