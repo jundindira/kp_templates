@@ -32,6 +32,11 @@ class LoginController extends Controller
         return route('admin.dashboard');
     }
 
+    // protected function authenticated($request, $user)
+    // {
+    //     return redirect()->route('admin.dashboard');
+    // }
+
 
     /**
      * Create a new controller instance.
