@@ -3,17 +3,17 @@
         <div class="nav">
 
             <div class="sb-sidenav-menu-heading">Menu</div>
-            <a class="nav-link-sidebar text-dark-50" href="{{ url('admin/dashboard') }}">
+            <a class="nav-link-sidebar text-dark-50" href="{{ url('dashboard') }}">
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                 Dashboard
             </a>
 
-            <a class="nav-link-sidebar text-dark-50" href="{{ url('admin/category') }}">
+            <a class="nav-link-sidebar text-dark-50" href="{{ url('category') }}">
                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                 Category
             </a>
 
-            <a class="nav-link-sidebar text-dark-50" href="{{ url('admin/template') }}">
+            <a class="nav-link-sidebar text-dark-50" href="{{ url('templates') }}">
                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                 Templates
             </a>
@@ -61,7 +61,7 @@
                     </div>
                 </nav>
             </div> --}}
-            
+
             <div class="sb-sidenav-menu-heading">Addons</div>
                 <a class="nav-link-sidebar text-dark-50" href="charts.html">
                     <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>

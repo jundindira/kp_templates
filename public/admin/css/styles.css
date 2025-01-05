@@ -3898,12 +3898,12 @@ textarea.form-control-lg {
 
 .navbar-search {
   flex-grow: 1; /* Membuat search bar memanfaatkan ruang kosong */
-  /* max-width: 500px; /* Atur panjang maksimal search bar */
+  max-width: 500px; /* Atur panjang maksimal search bar */
 }
 
 .navbar-search .form-control {
   width: 100%; /* Memanfaatkan ruang kosong */
-  max-width: 600px; /* Sesuaikan panjang maksimal */
+  /* max-width: 600px; Sesuaikan panjang maksimal */
 }
 
 
