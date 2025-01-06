@@ -35,11 +35,11 @@ Route::middleware('auth')->group(function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
 
-    Route::get('/category', function () {
-        return view('admin.category');
-    })->name('admin.category');
+    Route::get('category', function () {
+        return view('admin.category.index');
+    })->name('admin.category.index');
 
-    Route::get('/templates', function () {
-        return view('admin.templates');
-    })->name('admin.templates');
+    Route::get('template', function () {
+        return view('admin.template.index');
+    })->name('admin.template.index');
 });

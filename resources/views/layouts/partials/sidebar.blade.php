@@ -15,7 +15,7 @@
             </a>
 
             <div class="sb-sidenav-menu-heading">Manage Templates</div>
-            <a class="nav-link-sidebar text-dark-50" href="{{ url('templates') }}">
+            <a class="nav-link-sidebar text-dark-50" href="{{ url('template') }}">
                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                 Templates
             </a>

@@ -8,5 +8,5 @@
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">Category</li>
     </ol>
-
+    
 @endsection
