@@ -39,7 +39,7 @@ Route::middleware('auth')->group(function () {
         return view('admin.category.index');
     })->name('admin.category.index');
 
-    Route::get('template', function () {
-        return view('admin.template.index');
-    })->name('admin.template.index');
+    Route::get('templates', function () {
+        return view('admin.templates.index');
+    })->name('admin.templates.index');
 });
