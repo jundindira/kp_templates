@@ -49,6 +49,9 @@
         </tbody>
     </table>
 
-    
+    <!-- Pagination -->
+    <div class="d-flex justify-content-end mt-3">
+        {{ $categories->links() }}  <!-- Pagination links -->
+    </div>
 
 @endsection
