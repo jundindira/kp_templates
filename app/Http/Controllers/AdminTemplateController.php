@@ -33,7 +33,7 @@ class AdminTemplateController extends Controller
             'id_category' => 'required|integer|exists:categories,id_category',
             'status_templates' => 'required|boolean',
             'fitur_templates' => 'nullable|string',
-            'file_templates' => 'nullable|file|mimes:zip,rar|max:5120',
+            'file_templates' => 'nullable|file|mimes:zip,rar,mp4,mkv,avi|max:51200',
         ]);
 
         // Log validasi
@@ -75,7 +75,7 @@ class AdminTemplateController extends Controller
             'id_category' => 'required|integer|exists:categories,id_category',
             'status_templates' => 'required|boolean',
             'fitur_templates' => 'nullable|string',
-            'file_templates' => 'nullable|file|mimes:zip,rar|max:5120',
+            'file_templates' => 'nullable|file|mimes:zip,rar,mp4,mkv,avi|max:51200',
         ]);
 
         // Ambil data berdasarkan id
