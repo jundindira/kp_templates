@@ -23,6 +23,7 @@ Route::middleware('auth')->group(function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
 
+    // Category
     Route::prefix('category')->middleware('auth')->group(function () {
         Route::get('/', [CategoryController::class, 'index'])->name('category.index');
         Route::post('/store', [CategoryController::class, 'store'])->name('category.store');
@@ -31,6 +32,7 @@ Route::middleware('auth')->group(function () {
         Route::delete('/destroy/{category}', [CategoryController::class, 'destroy'])->name('category.destroy');
     });
 
+    // Templates
     Route::prefix('templates')->name('templates.')->group(function () {
         Route::get('/', [AdminTemplateController::class, 'index'])->name('index'); // Menampilkan daftar template
         Route::get('/create', [AdminTemplateController::class, 'create'])->name('create'); // Form untuk tambah template
